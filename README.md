@@ -31,8 +31,10 @@ Instructions to Build and Run
 
 The driver (main) program runs all three algorithms.
 
-`cmake .`
-`make driver`
+```
+cmake .
+make driver
+```
 
 A toy dataset of arXiv abstracts is provided.
 
@@ -47,6 +49,38 @@ Example
 For more help, run
 ```
 ./driver -h
+
+lda-bump-cpp LDA with bumping variational inference.
+
+Usage:
+  driver --topics=NUM_TOPICS --vocabulary=VOCAB
+         --datatr=TRAIN --datatest=TEST
+         [--bootstrap=NUM_BOOTSTRAP] [--minibatch=MINIBATCH]
+         [--alpha=ALPHA] [--eta=ETA]
+         [--tau0=TAU0] [--kappa=KAPPA]
+         [--fixed_step_size=STEPSIZE]
+         [--max_itr=MAX_ITR]
+         [--compute_elbo]
+  driver (-h | --help)
+  driver --version
+
+Options:
+  --topics=NUM_TOPICS        Number of topics for LDA
+  --vocabulary=VOCAB         Vocabulary, one word per line
+  --datatr=TRAIN             Training data in LDA-C format
+  --datatest=TEST            Testing  data in LDA-C format
+  --bootstrap=NUM_BOOTSTRAP  Number of bootstraps for bumping [default: 10]
+  --minibatch=MINIBATCH      Number of docs in minibatch [default: 500]
+  --alpha=ALPHA              Hyperparameter on topic proportions [default: 1/K]
+  --eta=ETA                  Hyperparameter on topics [default: 100/V]
+  --tau0=TAU0                Learning rate delay [default: 10.0]
+  --kappa=KAPPA              Learning rate forgetting rate [default: 0.75]
+  --fixed_step_size=STEPSIZE Fixed stepsize instead RobMonro [default: 0.0]
+  --max_itr=MAX_ITR          Max number of iterations for LDA [default: 100]
+  --compute_elbo             Boolean flag for computing ELBO
+  -h --help                  Show this screen
+  --version                  Show version
+
 ```
 
 
