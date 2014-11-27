@@ -6,7 +6,7 @@ Latent Dirichlet allocation (LDA) with bumping variational inference.
 Implements three versions of LDA
 * Coordinate ascent (mean-field)
 * Stochastic variational inference (https://github.com/Blei-Lab/onlineldavb)
-* Bumping variational inference [1]
+* Bumping variational inference [1] .. image:: http://img.shields.io/badge/arXiv-1411.0292-orange.svg?style=flat :target: http://arxiv.org/abs/1411.0292
 
 [1] Alp Kucukelbir and David M Blei. _Profile predictive inference._ arXiv
 preprint arXiv:1411.0292, 2014.
