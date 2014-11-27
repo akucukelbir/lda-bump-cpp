@@ -3,7 +3,7 @@ lda-bump-cpp
 
 Latent Dirichlet allocation (LDA) with bumping variational inference.
 
-[![](http://img.shields.io/badge/arXiv-1411.0292-brightgreen.svg)](http://arxiv.org/abs/1411.0292)
+[![](http://img.shields.io/badge/arXiv-1411.0292-brightgreen.svg?style=flat)](http://arxiv.org/abs/1411.0292) [![](http://img.shields.io/badge/license-GPLv2-red.svg?style=flat)](https://github.com/akucukelbir/lda-bump-cpp/blob/master/LICENSE)
 
 Implements three versions of LDA
 * Coordinate ascent (mean-field)
